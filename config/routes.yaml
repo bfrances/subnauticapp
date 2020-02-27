@@ -1,32 +1,32 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\NauticBaseController::index
 list_nauticbases:
-    path: /nauticbases
+    path: /api/v1/nauticbases
     controller: App\Controller\NauticBaseController::list
     methods: GET
     format: json
 create_nauticbases:
-    path: /nauticbases
+    path: /api/v1/nauticbases
     controller: App\Controller\NauticBaseController::create
     methods: POST
     format: json
 read_nauticbases:
-    path: /nauticbases/{id}
+    path: /api/v1/nauticbases/{id}
     controller: App\Controller\NauticBaseController::read
     methods: GET
     format: json
     requirements:
         id: '\d+'
 update_nauticbases:
-    path: /nauticbases/{id}
+    path: /api/v1/nauticbases/{id}
     controller: App\Controller\NauticBaseController::update
     methods: PUT
     format: json
     requirements:
         id: '\d+'
 delete_nauticbases:
-    path: /nauticbases/{id}
+    path: /api/v1/nauticbases/{id}
     controller: App\Controller\NauticBaseController::delete
     methods: DELETE
     format: json

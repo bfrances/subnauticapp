@@ -13,6 +13,11 @@ class NauticBaseController extends AbstractController
 {
     const PAGINATION_NB_BY_PAGE = 20;
 
+    public function index()
+    {
+        return $this->redirectToRoute('list_nauticbases');
+    }
+
     public function list(Request $request): Response
     {
         $page = 1;
