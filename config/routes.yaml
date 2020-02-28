@@ -9,7 +9,7 @@ list_nauticbases:
 create_nauticbases:
     path: /api/v1/nauticbases
     controller: App\Controller\NauticBaseController::create
-    methods: POST
+    methods: POST|OPTIONS
     format: json
 read_nauticbases:
     path: /api/v1/nauticbases/{id}
@@ -21,14 +21,14 @@ read_nauticbases:
 update_nauticbases:
     path: /api/v1/nauticbases/{id}
     controller: App\Controller\NauticBaseController::update
-    methods: PUT
+    methods: PUT|OPTIONS
     format: json
     requirements:
         id: '\d+'
 delete_nauticbases:
     path: /api/v1/nauticbases/{id}
     controller: App\Controller\NauticBaseController::delete
-    methods: DELETE
+    methods: DELETE|OPTIONS
     format: json
     requirements:
         id: '\d+'

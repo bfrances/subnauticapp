@@ -102,7 +102,7 @@ class NauticBaseController extends AbstractController
             $nauticBase->setAddress($data->address);
         }
         if (isset($data->city)) {
-            $nauticBase->setCity(${$data}->city);
+            $nauticBase->setCity($data->city);
         }
         if (isset($data->postalCode)) {
             $nauticBase->setPostalCode($data->postalCode);

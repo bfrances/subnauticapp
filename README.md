@@ -41,8 +41,11 @@ php bin/console doctrine:database:create --if-not-exists
 php bin/console doctrine:schema:update --force
 ```
 
-### Launch server
+## Launch server
 
 ``` 
 php -S 127.0.0.1:8600 public/index.php
 ```
+
+## Access api with this URL
+- http://127.0.0.1:8600/api/v1/nauticbases
